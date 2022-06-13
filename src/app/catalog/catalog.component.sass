@@ -1,0 +1,53 @@
+.catalog
+  margin: 25px auto
+
+.filters
+  margin: 25px auto
+
+a
+  text-decoration: none
+  color: black
+
+.content
+  mat-grid-list
+    border: 25px solid transparent
+    mat-grid-tile
+
+      .product
+        height: 100%
+        width: 100%
+        list-style: none
+        display: flex
+        flex-direction: column
+        max-width: 100%
+        max-height: 100%
+
+        .description
+
+          .row
+            display: flex
+
+          .price
+            margin-left: auto
+            white-space: nowrap
+
+        .image
+          width: 100%
+          height: 100%
+
+          .swiper
+            width: 100%
+            height: 100%
+            
+            // modification of 
+            // .swiper-wrapper
+            //   .swiper-slide 
+            //     at styles.sass
+
+          img
+            width: auto 
+            height: auto
+            max-width: 100%
+            max-height: 100%
+            // transform: translate(-50%, -50%)
+

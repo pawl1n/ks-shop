@@ -1,0 +1,46 @@
+<div class="product" *ngIf="product">
+  <div class="image">
+    <swiper
+      style="--swiper-navigation-color: black; --swiper-pagination-color: black"
+      [lazy]="true"
+      [pagination]="{
+        clickable: true
+      }"
+      [navigation]="true"
+      [centeredSlides]="true"
+      [centeredSlidesBounds]="true"
+    >
+      <ng-template swiperSlide *ngFor="let image of product.images"
+        ><img [attr.data-src]="getSrc(image)" class="swiper-lazy" />
+        <div class="wrapper">
+          <div class="swiper-lazy-preloader swiper-lazy-preloader-black"></div>
+        </div>
+      </ng-template>
+    </swiper>
+  </div>
+  <div class="info">
+    <h1>{{ product.name }}</h1>
+    <p i18n>Ціна: {{ product.price | currency: "₴" }}</p>
+    <p i18n *ngIf="product.article">Артикул: {{ product.article }}</p>
+    <p i18n *ngIf="product.size">Розмір: {{ product.size }}</p>
+
+    <div class="order" *ngIf="product.stock">
+      <mat-form-field appearance="fill">
+        <mat-label i18n>Кількість</mat-label>
+        <input
+          matInput
+          type="number"
+          min="1"
+          [max]="product.stock"
+          placeholder="1"
+          [formControl]="quantityFormControl"
+          [value]="1"
+        />
+        <mat-error>{{ getQuantityError() }}</mat-error>
+      </mat-form-field>
+      <button i18n class="addToCart" mat-raised-button (click)="addToCart()">
+        Додати до кошика
+      </button>
+    </div>
+  </div>
+</div>

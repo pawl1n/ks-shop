@@ -1,0 +1,53 @@
+<div class="content catalog">
+  <h1 i18n>Каталог</h1>
+</div>
+<!-- <mat-divider></mat-divider>
+<div class="content filters">
+  <h1>Фільтри</h1>
+</div> -->
+<mat-divider></mat-divider>
+<div class="content">
+  <mat-grid-list [cols]="cols" rowHeight="1:1.5" [gutterSize]="'30px'">
+    <mat-grid-tile class="product" *ngFor="let product of products">
+      <div class="product">
+        <div class="image">
+          <swiper
+            style="
+              --swiper-navigation-color: black;
+              --swiper-pagination-color: black;
+            "
+            [lazy]="true"
+            [pagination]="{
+              clickable: true
+            }"
+            [navigation]="true"
+            [centeredSlides]="true"
+            [centeredSlidesBounds]="true"
+          >
+            <ng-template swiperSlide *ngFor="let image of product.images"
+              ><a [routerLink]="product._id"
+                ><img [attr.data-src]="getSrc(image)" class="swiper-lazy"
+              /></a>
+              <div class="wrapper">
+                <div
+                  class="swiper-lazy-preloader swiper-lazy-preloader-black"
+                ></div>
+              </div>
+            </ng-template>
+          </swiper>
+        </div>
+        <a [routerLink]="product._id">
+          <div class="description">
+            <div class="row">
+              <p class="name">{{ product.name }}</p>
+              <p class="price">{{ product.price | currency: "₴" }}</p>
+            </div>
+            <p i18n class="size" *ngIf="product.size">
+              Розмір: {{ product.size }}
+            </p>
+          </div>
+        </a>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

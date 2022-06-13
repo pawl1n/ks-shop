@@ -1,0 +1,37 @@
+<footer>
+  <div class="content">
+    <mat-grid-list cols="3" rowHeight="250px">
+      <mat-grid-tile [colspan]="colspan">
+        <div class="column">
+          <mat-divider></mat-divider>
+          <h1 i18n>Підтримка</h1>
+          <a i18n>Допомога</a>
+          <a i18n>Доставка</a>
+          <a i18n>Оплата</a>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="colspan">
+        <div class="column">
+          <mat-divider></mat-divider>
+          <h1 i18n>Інформація</h1>
+          <a i18n>Про нас</a>
+          <a i18n>Повернення</a>
+        </div>
+      </mat-grid-tile>
+      <mat-grid-tile [colspan]="colspan">
+        <div class="column">
+          <mat-divider></mat-divider>
+          <h1 i18n>Зміна мови</h1>
+          <mat-form-field appearance="fill">
+            <mat-label i18n>Оберіть мову</mat-label>
+            <mat-select (selectionChange)="changeLocale($event.value)">
+              <mat-option value="uk">Українська</mat-option>
+              <mat-option value="en">English</mat-option>
+              <mat-option value="ru" disabled>Русский (недоступно)</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+</footer>

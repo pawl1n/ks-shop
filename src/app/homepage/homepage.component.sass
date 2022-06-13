@@ -1,0 +1,41 @@
+.wrapper
+  height: 500px
+
+  img
+    z-index: 1
+
+  .text
+    z-index: 1
+    // background: rgba(0,0,0,.5)
+    text-align: center
+    
+    .text-content
+      > *
+        font-family: 'Oswald', sans-serif
+      
+      h1
+        color: white
+        font-weight: 900
+        font-size: xx-large
+
+      button
+        font-weight: 900
+    
+.background-1
+  background: url('https://kishka-strybaie.web.app/uk/assets/homepage/background-1.jpeg') no-repeat center center
+  background-size: cover
+
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: rgba(0,0,0,.5)
+    z-index: 0
+    height: 500px
+
+.background-2
+  background-color: #EDAB00
+  z-index: 1

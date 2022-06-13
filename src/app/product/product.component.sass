@@ -1,0 +1,43 @@
+.product
+  padding: 0px 20px
+  height: 100%
+  width: calc(100% - 40px)
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: space-around
+  max-width: 100%
+  max-height: 100%
+
+  & > *
+    padding: 25px 0
+
+  .info
+    display: flex
+    flex-direction: column
+
+    .order
+      display: flex
+      flex-direction: column
+
+      .addToCart
+        margin-top: 15px
+
+  .image
+    width: 50%
+    // height: 100%
+
+    .swiper
+      height: 100%
+      
+      // modification of 
+      // .swiper-wrapper
+      //   .swiper-slide 
+      //     at styles.sass
+
+    img
+      width: auto 
+      height: auto
+      max-width: 100%
+      max-height: 100%
+      // transform: translate(-50%, -50%)

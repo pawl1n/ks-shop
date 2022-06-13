@@ -1,0 +1,64 @@
+.sidenav-container 
+  height: 100%
+
+.sidenav 
+  width: 100%
+  
+  mat-toolbar
+    a
+      text-decoration: none
+      color: black
+
+  mat-nav-list
+    display: flex
+    flex-direction: column
+
+    li
+      a
+        display: flex
+        margin: 0 15px
+        border-radius: 3px
+        padding: 10px 15px
+        transition: all 150ms ease-in
+
+mat-toolbar
+  min-height: 64px
+
+  .header-content
+    display: flex
+    align-items: center
+    width: 100%
+    max-width: 1200px
+    margin: 0 auto
+
+    .name
+      display: flex
+      align-items: center
+      text-decoration: none
+      color: white
+
+      img
+        margin: 0 10px
+        border-radius: 50% 
+
+    .spacer
+      flex: 1 1 auto
+
+    mat-nav-list
+      padding: 0
+      display: flex
+      flex-direction: row
+    // a
+    //   text-decoration: none
+    //   color: white
+    //   height: min-content
+
+li
+  list-style: none
+
+mat-sidenav-content
+  display: flex
+  flex-direction: column
+
+.flex-grow
+  flex-grow: 1

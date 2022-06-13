@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css"
+@import "~@angular/material/theming"
+@import "~swiper/scss"
+@import "~swiper/scss/lazy"
+@import "~swiper/scss/pagination"
+@import "~swiper/scss/navigation"
+@include mat-core()
+
+$primary: mat-palette($mat-grey, 800, 700, 900)
+$accent: mat-palette($mat-red, 200)
+
+$theme: mat-light-theme($primary, $accent)
+
+@include angular-material-theme($theme)
+
+.active
+  background-color : black
+  color: white
+
+  *
+    color: white
+
+.delete
+  background-color : #f44336
+  color: white
+
+  *
+    color: white
+
+.full-width-table 
+  width: 100%
+
+.table-wrapper
+  overflow-x: auto
+  display: block
+
+.content
+  width: 100%
+  max-width: 1200px
+  margin: 0 auto
+
+  & > *
+    padding: 0 20px
+
+.swiper-slide 
+  height: auto
+  display: flex
+  align-items: center
+  justify-content: center

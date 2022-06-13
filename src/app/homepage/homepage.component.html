@@ -1,0 +1,35 @@
+<mat-grid-list cols="5" rowHeight="fit">
+  <div class="wrapper background-1">
+    <mat-grid-tile [colspan]="colspanText" class="text"
+      ><div class="text-content">
+        <h1 i18n>Лише оригінальні речі</h1>
+        <button i18n mat-raised-button routerLink="catalog">
+          Перейти до каталогу
+        </button>
+      </div></mat-grid-tile
+    >
+
+    <mat-grid-tile [colspan]="colspanImage"
+      ><img
+        src="https://kishka-strybaie.web.app/uk/assets/homepage/main-1-nobackground.png"
+        alt="Нова колекція Puma"
+        height="100%"
+    /></mat-grid-tile>
+  </div>
+  <div class="wrapper background-2">
+    <mat-grid-tile [colspan]="colspanImage"
+      ><img
+        src="https://kishka-strybaie.web.app/uk/assets/homepage/main-2.png"
+        alt="Нова колекція Puma"
+        height="100%"
+    /></mat-grid-tile>
+    <mat-grid-tile [colspan]="colspanText" class="text"
+      ><div class="text-content">
+        <h1 i18n>Краща ціна</h1>
+        <button i18n mat-raised-button routerLink="catalog">
+          Перейти до каталогу
+        </button>
+      </div></mat-grid-tile
+    >
+  </div>
+</mat-grid-list>

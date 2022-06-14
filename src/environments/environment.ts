@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  serverUrl: 'https://localhost:3000',
+  serverUrl: 'http://localhost:3000',
+  phoneNumber: '+380951982651',
 };
 
 /*

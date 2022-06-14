@@ -5,17 +5,22 @@
         <div class="column">
           <mat-divider></mat-divider>
           <h1 i18n>Підтримка</h1>
-          <a i18n>Допомога</a>
-          <a i18n>Доставка</a>
-          <a i18n>Оплата</a>
+          <a
+            i18n
+            href="https://www.instagram.com/kishka.strybaie"
+            target="_blank"
+            >instagram</a
+          >
+          <a i18n routerLink="delivery">Доставка</a>
+          <a i18n routerLink="payments">Оплата</a>
         </div>
       </mat-grid-tile>
       <mat-grid-tile [colspan]="colspan">
         <div class="column">
           <mat-divider></mat-divider>
           <h1 i18n>Інформація</h1>
-          <a i18n>Про нас</a>
-          <a i18n>Повернення</a>
+          <a i18n routerLink="about-us">Про нас</a>
+          <a i18n routerLink="returns">Повернення</a>
         </div>
       </mat-grid-tile>
       <mat-grid-tile [colspan]="colspan">

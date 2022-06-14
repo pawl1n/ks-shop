@@ -29,6 +29,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatStepperModule } from '@angular/material/stepper';
+import { DeliveryComponent } from './info/delivery/delivery.component';
+import { PaymentsComponent } from './info/payments/payments.component';
+import { AboutUsComponent } from './info/about-us/about-us.component';
+import { ReturnsComponent } from './info/returns/returns.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +44,10 @@ import { MatStepperModule } from '@angular/material/stepper';
     ProductComponent,
     CartComponent,
     CheckoutComponent,
+    DeliveryComponent,
+    PaymentsComponent,
+    AboutUsComponent,
+    ReturnsComponent,
   ],
   imports: [
     BrowserModule,

@@ -18,6 +18,70 @@
           <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="1809254255214550583" datatype="html">
+        <source>Кішка стрибає | Каталог</source>
+        <target>Kishka strybaie | Catalog</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app-routing.module.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3287579438099540921" datatype="html">
+        <source>Кішка стрибає | Огляд товару</source>
+        <target>Kishka strybaie | Product</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app-routing.module.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7406417078398886030" datatype="html">
+        <source>Кішка стрибає | Кошик</source>
+        <target>Kishka strybaie | Cart</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app-routing.module.ts</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8820402897284106185" datatype="html">
+        <source>Кішка стрибає | Замовлення</source>
+        <target>Kishka strybaie | Order</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app-routing.module.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2229015923891671885" datatype="html">
+        <source>Кішка стрибає | Доставка</source>
+        <target>Kishka strybaie | Delivery</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app-routing.module.ts</context>
+          <context context-type="linenumber">57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1790387661583999731" datatype="html">
+        <source>Кішка стрибає | Оплата</source>
+        <target>Kishka strybaie | Payments</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app-routing.module.ts</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8546348477402930026" datatype="html">
+        <source>Кішка стрибає | Про нас</source>
+        <target>Kishka strybaie | About Us</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app-routing.module.ts</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="173133743347088199" datatype="html">
+        <source>Кішка стрибає | Повернення</source>
+        <target>Kishka strybaie | Returns</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app-routing.module.ts</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="4501261215376562175" datatype="html">
         <source>Кошик</source>
         <target>Cart</target>
@@ -230,12 +294,12 @@
           <context context-type="linenumber">7</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4499149369758591004" datatype="html">
-        <source>Допомога</source>
-        <target>Help</target>
+      <trans-unit id="8337982773199880125" datatype="html">
+        <source>instagram</source>
+        <target>instagram</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">8</context>
+          <context context-type="linenumber">12</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1737833163650979408" datatype="html">
@@ -243,7 +307,11 @@
         <target>Delivery</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">9</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/info/delivery/delivery.component.html</context>
+          <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3662080089377716791" datatype="html">
@@ -251,7 +319,11 @@
         <target>Payment</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">10</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/info/payments/payments.component.html</context>
+          <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3846240571903171231" datatype="html">
@@ -259,7 +331,7 @@
         <target>Information</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">16</context>
+          <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2663122898086293723" datatype="html">
@@ -267,7 +339,11 @@
         <target>About Us</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">17</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/info/about-us/about-us.component.html</context>
+          <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7115369217460659263" datatype="html">
@@ -275,7 +351,11 @@
         <target>Return</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">18</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/info/returns/returns.component.html</context>
+          <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6095940114657552395" datatype="html">
@@ -283,7 +363,7 @@
         <target>Change language</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">24</context>
+          <context context-type="linenumber">29</context>
         </context-group>
       </trans-unit>
       <trans-unit id="2824944259156522622" datatype="html">
@@ -291,7 +371,7 @@
         <target>Select language</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/footer/footer.component.html</context>
-          <context context-type="linenumber">26</context>
+          <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8452436728104762812" datatype="html">
@@ -320,6 +400,54 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/homepage/homepage.component.html</context>
           <context context-type="linenumber">28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1910690592385753239" datatype="html">
+        <source> Інтернет магазин Кішка стрибає надає змогу замовити оригінальні речі за найвигіднішими цінами. Всі речі є оригінальними. </source>
+        <target> Online store Kishka strybaie allows you to order original clothes at the best prices. All products are original. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/info/about-us/about-us.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4055263525286891684" datatype="html">
+        <source> Наразі доставка здійснюється лише Новою поштою або самовивозом у місті Суми за адресою вул. Петропавлівська, 62, другий поверх, другі двері зліва. </source>
+        <target> Currently, delivery is carried out only by Nova Poshta or self-pickup in the city of Sumy at st. Petropavlivska, 62, second floor, second door on the left. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/info/delivery/delivery.component.html</context>
+          <context context-type="linenumber">4,8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="513310767371950503" datatype="html">
+        <source>Графік роботи: пн-пт з 10:00 до 18:00</source>
+        <target>Opening hours: Mon-Fri from 10:00 to 18:00</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/info/delivery/delivery.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7422663080447139682" datatype="html">
+        <source>Наразі доступна лише післяоплата при отриманні замовлення.</source>
+        <target>Currently, only postpay is available.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/info/payments/payments.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7729327330475581003" datatype="html">
+        <source> Всі товари підлежать поверненню в тому випадку, якщо вони не були пошкоджені та зберегли товарний вигляд. </source>
+        <target> All goods can be returned if they have not been damaged and have retained their appearance. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/info/returns/returns.component.html</context>
+          <context context-type="linenumber">4,7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8358243882237739042" datatype="html">
+        <source> Якщо товар не сподобався, ви можете повернути його в магазин, попередньо зв&apos;язавшись з нами за номером телефону <x id="INTERPOLATION" equiv-text="{{ phoneNumber }}"/>. </source>
+        <target> If you do not like the product, you can return it to the store by contacting us by phone <x id="INTERPOLATION" equiv-text="{{ phoneNumber }}"/>. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/info/returns/returns.component.html</context>
+          <context context-type="linenumber">8,11</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1339838218901016997" datatype="html">

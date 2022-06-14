@@ -6,6 +6,10 @@ import { CatalogComponent } from './catalog/catalog.component';
 import { ProductComponent } from './product/product.component';
 import { CartComponent } from './cart/cart.component';
 import { CheckoutComponent } from './checkout/checkout.component';
+import { DeliveryComponent } from './info/delivery/delivery.component';
+import { PaymentsComponent } from './info/payments/payments.component';
+import { AboutUsComponent } from './info/about-us/about-us.component';
+import { ReturnsComponent } from './info/returns/returns.component';
 
 const routes: Routes = [
   {
@@ -15,7 +19,7 @@ const routes: Routes = [
       {
         path: '',
         component: HomepageComponent,
-        title: 'Кішка стрибає | Новий одяг',
+        title: `Кішка стрибає | Новий одяг`,
       },
       {
         path: 'catalog',
@@ -23,12 +27,12 @@ const routes: Routes = [
           {
             path: '',
             component: CatalogComponent,
-            title: 'Кішка стрибає | Каталог',
+            title: $localize`Кішка стрибає | Каталог`,
           },
           {
             path: ':id',
             component: ProductComponent,
-            title: 'Кішка стрибає | Огляд товару',
+            title: $localize`Кішка стрибає | Огляд товару`,
           },
         ],
       },
@@ -38,20 +42,40 @@ const routes: Routes = [
           {
             path: '',
             component: CartComponent,
-            title: 'Кішка стрибає | Кошик',
+            title: $localize`Кішка стрибає | Кошик`,
           },
           {
             path: 'checkout',
             component: CheckoutComponent,
-            title: 'Кішка стрибає | Замовлення',
+            title: $localize`Кішка стрибає | Замовлення`,
           },
         ],
+      },
+      {
+        path: 'delivery',
+        component: DeliveryComponent,
+        title: $localize`Кішка стрибає | Доставка`,
+      },
+      {
+        path: 'payments',
+        component: PaymentsComponent,
+        title: $localize`Кішка стрибає | Оплата`,
+      },
+      {
+        path: 'about-us',
+        component: AboutUsComponent,
+        title: $localize`Кішка стрибає | Про нас`,
+      },
+      {
+        path: 'returns',
+        component: ReturnsComponent,
+        title: $localize`Кішка стрибає | Повернення`,
       },
     ],
   },
   {
     path: '**',
-    redirectTo: 'uk',
+    redirectTo: '',
     pathMatch: 'full',
   },
 ];

@@ -114,9 +114,9 @@
           <context context-type="linenumber">29</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4863065676216234616" datatype="html">
-        <source> Ціна <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{ totalPrice | currency }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="HORIZONTAL_RULE" ctype="x-hr" equiv-text="&lt;hr /&gt;"/><x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div class=&quot;buttons&quot;&gt;"/><x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button mat-raised-button (click)=&quot;clearCart()&quot;&gt;"/> Очистити кошик <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a mat-raised-button routerLink=&quot;checkout&quot;&gt;"/> Придбати <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/></source>
-        <target> Price <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{ totalPrice | currency }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="HORIZONTAL_RULE" ctype="x-hr" equiv-text="&lt;hr /&gt;"/><x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div class=&quot;buttons&quot;&gt;"/><x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button mat-raised-button (click)=&quot;clearCart()&quot;&gt;"/> Clear cart <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a mat-raised-button routerLink=&quot;checkout&quot;&gt;"/> Order <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/></target>
+      <trans-unit id="197044869763087719" datatype="html">
+        <source> Вартість <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{ totalPrice | currency: &quot;₴&quot; }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="HORIZONTAL_RULE" ctype="x-hr" equiv-text="&lt;hr /&gt;"/><x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div class=&quot;buttons&quot;&gt;"/><x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button mat-raised-button (click)=&quot;clearCart()&quot;&gt;"/> Очистити кошик <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a mat-raised-button routerLink=&quot;checkout&quot;&gt;"/> Придбати <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/></source>
+        <target> Cost <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{ totalPrice | currency: &quot;₴&quot; }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="HORIZONTAL_RULE" ctype="x-hr" equiv-text="&lt;hr /&gt;"/><x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div class=&quot;buttons&quot;&gt;"/><x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button mat-raised-button (click)=&quot;clearCart()&quot;&gt;"/> Clear cart <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a mat-raised-button routerLink=&quot;checkout&quot;&gt;"/> Order <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/cart/cart.component.html</context>
           <context context-type="linenumber">36,45</context>
@@ -470,8 +470,8 @@
         </context-group>
       </trans-unit>
       <trans-unit id="5199996765827822146" datatype="html">
-        <source>Ціна: <x id="INTERPOLATION" equiv-text="{{ product.price | currency }}"/></source>
-        <target>Price: <x id="INTERPOLATION" equiv-text="{{ product.price | currency }}"/></target>
+        <source>Ціна: <x id="INTERPOLATION" equiv-text="{{ product.price | currency: &quot;₴&quot; }}"/></source>
+        <target>Price: <x id="INTERPOLATION" equiv-text="{{ product.price | currency: &quot;₴&quot; }}"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/product/product.component.html</context>
           <context context-type="linenumber">23</context>

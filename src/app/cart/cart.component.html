@@ -34,8 +34,8 @@
     <div>
       <hr />
       <div i18n>
-        Ціна
-        <span>{{ totalPrice | currency }}</span>
+        Вартість
+        <span>{{ totalPrice | currency: "₴" }}</span>
         <hr />
         <div class="buttons">
           <button mat-raised-button (click)="clearCart()">

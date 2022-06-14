@@ -30,8 +30,10 @@ export class FooterComponent implements OnInit {
   changeLocale(locale: string) {
     const locales = ['en', 'uk'];
     for (let item of locales) {
-      if (window.location.href.includes(item)) {
-        window.location.replace(window.location.href.replace(item, locale));
+      if (window.location.href.includes(`/${item}/`)) {
+        window.location.replace(
+          window.location.href.replace(`/${item}/`, `/${locale}/`)
+        );
         break;
       }
     }

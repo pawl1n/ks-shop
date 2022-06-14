@@ -19,6 +19,7 @@ export class CartComponent implements OnInit {
   itemsWithPrice: any[] = [];
   quantityFormArray: any = new FormArray([]);
   flexDirection: string = 'row';
+  orderAvailable: boolean = false;
 
   constructor(
     private cartService: CartService,
@@ -55,11 +56,17 @@ export class CartComponent implements OnInit {
         items[i].quantity = this.quantityFormArray.at(i).value;
       }
     }
-    this.productsService.getPrice(items).subscribe((ans: any) => {
-      this.totalPrice = ans.totalPrice;
-      this.itemsWithPrice = ans.items;
+    this.productsService.getPrice(items).subscribe({
+      next: (ans: any) => {
+        this.totalPrice = ans.totalPrice;
+        this.itemsWithPrice = ans.items;
 
-      this.displayItems(true);
+        this.displayItems(true);
+        this.orderAvailable = true;
+      },
+      error: (err) => {
+        this.orderAvailable = false;
+      },
     });
   }
 

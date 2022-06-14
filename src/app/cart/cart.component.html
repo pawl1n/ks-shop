@@ -41,7 +41,9 @@
           <button mat-raised-button (click)="clearCart()">
             Очистити кошик
           </button>
-          <a mat-raised-button routerLink="checkout"> Придбати </a>
+          <ng-container *ngIf="orderAvailable">
+            <a mat-raised-button routerLink="checkout"> Придбати </a>
+          </ng-container>
         </div>
       </div>
     </div>

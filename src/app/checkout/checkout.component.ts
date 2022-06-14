@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Order } from 'interfaces/order';
 import { CartService } from 'services/cart.service';
 import { OrdersService } from 'services/orders.service';
@@ -18,7 +19,8 @@ export class CheckoutComponent implements OnInit {
 
   constructor(
     private cartService: CartService,
-    private ordersService: OrdersService
+    private ordersService: OrdersService,
+    private router: Router
   ) {}
 
   ngOnInit(): void {
@@ -46,7 +48,12 @@ export class CheckoutComponent implements OnInit {
       user: this.credentialsForm.value,
       shipping: this.addressForm.value,
     };
-    this.ordersService.create(order).subscribe();
+    this.ordersService.create(order).subscribe({
+      next: (ans: any) => {
+        this.cartService.clearCart();
+        this.router.navigate(['catalog']);
+      },
+    });
   }
 
   getEmailError() {

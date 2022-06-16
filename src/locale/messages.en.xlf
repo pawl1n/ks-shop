@@ -95,7 +95,7 @@
         <target>Size: <x id="INTERPOLATION" equiv-text="{{ item.size }}"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/cart/cart.component.html</context>
-          <context context-type="linenumber">10</context>
+          <context context-type="linenumber">11</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/product/product.component.html</context>
@@ -107,19 +107,19 @@
         <target>Кількість</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/cart/cart.component.html</context>
-          <context context-type="linenumber">14</context>
+          <context context-type="linenumber">16</context>
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/product/product.component.html</context>
           <context context-type="linenumber">29</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="4428157712305962708" datatype="html">
-        <source> Вартість <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{ totalPrice | currency: &quot;₴&quot; }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="HORIZONTAL_RULE" ctype="x-hr" equiv-text="&lt;hr /&gt;"/><x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div class=&quot;buttons&quot;&gt;"/><x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button mat-raised-button (click)=&quot;clearCart()&quot;&gt;"/> Очистити кошик <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngIf=&quot;orderAvailable&quot;&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a mat-raised-button routerLink=&quot;checkout&quot;&gt;"/> Придбати <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/></source>
-        <target> Cost <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{ totalPrice | currency: &quot;₴&quot; }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="HORIZONTAL_RULE" ctype="x-hr" equiv-text="&lt;hr /&gt;"/><x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div class=&quot;buttons&quot;&gt;"/><x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button mat-raised-button (click)=&quot;clearCart()&quot;&gt;"/> Clear cart <x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngIf=&quot;orderAvailable&quot;&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a mat-raised-button routerLink=&quot;checkout&quot;&gt;"/> Order <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/></target>
+      <trans-unit id="4839009562864114980" datatype="html">
+        <source> Вартість <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{ totalPrice | currency: &quot;₴&quot; }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="HORIZONTAL_RULE" ctype="x-hr" equiv-text="&lt;hr /&gt;"/><x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div class=&quot;buttons&quot;&gt;"/><x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button mat-raised-button (click)=&quot;clearCart()&quot;&gt;"/>Очистити кошик<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngIf=&quot;orderAvailable&quot;&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a mat-raised-button routerLink=&quot;checkout&quot;&gt;"/> Придбати <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/></source>
+        <target> Cost <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span&gt;"/><x id="INTERPOLATION" equiv-text="{{ totalPrice | currency: &quot;₴&quot; }}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/><x id="HORIZONTAL_RULE" ctype="x-hr" equiv-text="&lt;hr /&gt;"/><x id="START_TAG_DIV" ctype="x-div" equiv-text="&lt;div class=&quot;buttons&quot;&gt;"/><x id="START_TAG_BUTTON" ctype="x-button" equiv-text="&lt;button mat-raised-button (click)=&quot;clearCart()&quot;&gt;"/>Clear cart<x id="CLOSE_TAG_BUTTON" ctype="x-button" equiv-text="&lt;/button&gt;"/><x id="START_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;ng-container *ngIf=&quot;orderAvailable&quot;&gt;"/><x id="START_LINK" ctype="x-a" equiv-text="&lt;a mat-raised-button routerLink=&quot;checkout&quot;&gt;"/> Order <x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/><x id="CLOSE_TAG_NG_CONTAINER" ctype="x-ng_container" equiv-text="&lt;/ng-container&gt;"/><x id="CLOSE_TAG_DIV" ctype="x-div" equiv-text="&lt;/div&gt;"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/cart/cart.component.html</context>
-          <context context-type="linenumber">36,47</context>
+          <context context-type="linenumber">40,49</context>
         </context-group>
       </trans-unit>
       <trans-unit id="7961128594364848292" datatype="html">
@@ -127,7 +127,7 @@
         <target>Cart is empty</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/cart/cart.component.html</context>
-          <context context-type="linenumber">52</context>
+          <context context-type="linenumber">53</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1490978183209637130" datatype="html">
@@ -174,12 +174,48 @@
           <context context-type="linenumber">39</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="5513386170742168417" datatype="html">
+        <source>Фільтри</source>
+        <target>Filter</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/catalog.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1999032212531593925" datatype="html">
+        <source>Категорія</source>
+        <target>Category</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/catalog.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4363362312541809534" datatype="html">
+        <source>Всі</source>
+        <target>All</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/catalog.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/catalog.component.html</context>
+          <context context-type="linenumber">23</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="7358332081559161614" datatype="html">
         <source> Розмір: <x id="INTERPOLATION" equiv-text="{{ product.size }}"/> </source>
         <target>Size: <x id="INTERPOLATION" equiv-text="{{ product.size }}"/></target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/catalog/catalog.component.html</context>
-          <context context-type="linenumber">44,46</context>
+          <context context-type="linenumber">68,70</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3779986043366885646" datatype="html">
+        <source> Завантажити ще </source>
+        <target> Load more </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/catalog/catalog.component.html</context>
+          <context context-type="linenumber">82,84</context>
         </context-group>
       </trans-unit>
       <trans-unit id="278405624277872173" datatype="html">
@@ -284,6 +320,54 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/checkout/checkout.component.html</context>
           <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3766192718221718334" datatype="html">
+        <source>Необхідно ввести email</source>
+        <target>Field email is required</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="20395172232251459" datatype="html">
+        <source>Неправильно введено email</source>
+        <target>The email was entered incorrectly</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="798660179268510947" datatype="html">
+        <source>Необхідно ввести імʼя</source>
+        <target>Field name is required</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5334018619538549775" datatype="html">
+        <source>Необхідно ввести номер телефону</source>
+        <target>Phone number is required</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6251080683946747918" datatype="html">
+        <source>Необхідно ввести номер відділу</source>
+        <target>Department number is required</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5744583905981466522" datatype="html">
+        <source>Необхідно ввести місто</source>
+        <target>City is required</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">87</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8627397845717886119" datatype="html">

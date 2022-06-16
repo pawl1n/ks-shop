@@ -3,15 +3,15 @@
 </div>
 <mat-divider></mat-divider>
 <div class="content filters">
-  <h1>Фільтри</h1>
+  <h1 i18n>Фільтри</h1>
   <form class="filters-container" [formGroup]="filtersForm">
     <mat-form-field>
-      <mat-label>Категорія</mat-label>
+      <mat-label i18n>Категорія</mat-label>
       <mat-select
         formControlName="category"
         (selectionChange)="filtersChanged()"
       >
-        <mat-option value="">Всі</mat-option>
+        <mat-option value="" i18n>Всі</mat-option>
         <mat-option *ngFor="let category of categories" [value]="category._id"
           >{{ category.name }}
         </mat-option>
@@ -20,7 +20,7 @@
     <mat-form-field>
       <mat-label>Розмір</mat-label>
       <mat-select formControlName="size" (selectionChange)="filtersChanged()">
-        <mat-option value="">Всі</mat-option>
+        <mat-option value="" i18n>Всі</mat-option>
         <mat-option *ngFor="let size of sizes" [value]="size">{{
           size
         }}</mat-option>
@@ -78,6 +78,7 @@
     (click)="loadMore()"
     class="loadMore"
     *ngIf="loadMoreButton"
+    i18n
   >
     Завантажити ще
   </button>

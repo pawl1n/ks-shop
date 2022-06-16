@@ -58,33 +58,33 @@ export class CheckoutComponent implements OnInit {
 
   getEmailError() {
     if (this.credentialsForm.get('email')?.hasError('required')) {
-      return 'Необхідно ввести email';
+      return $localize`Необхідно ввести email`;
     } else if (this.credentialsForm.get('email')?.hasError('email')) {
-      return 'Неправильно введено email';
+      return $localize`Неправильно введено email`;
     } else return '';
   }
 
   getNameError() {
     if (this.credentialsForm.get('name')?.hasError('required')) {
-      return 'Необхідно ввести імʼя';
+      return $localize`Необхідно ввести імʼя`;
     } else return '';
   }
 
   getPhoneError() {
     if (this.credentialsForm.get('phone')?.hasError('required')) {
-      return 'Необхідно ввести номер телефону';
+      return $localize`Необхідно ввести номер телефону`;
     } else return '';
   }
 
   getDepartmentError() {
     if (this.addressForm.get('department')?.hasError('required')) {
-      return 'Необхідно ввести номер відділу';
+      return $localize`Необхідно ввести номер відділу`;
     } else return '';
   }
 
   getCityError() {
     if (this.addressForm.get('city')?.hasError('required')) {
-      return 'Необхідно ввести місто';
+      return $localize`Необхідно ввести місто`;
     } else return '';
   }
 }

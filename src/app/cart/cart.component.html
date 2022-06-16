@@ -1,15 +1,17 @@
 <div class="content">
   <h1 i18n>Кошик</h1>
-  <div class="cart" *ngIf="itemsWithPrice.length">
+  <mat-grid-list cols="4" rowHeight="85px" *ngIf="itemsWithPrice.length">
     <div class="product" *ngFor="let item of itemsWithPrice; let i = index">
-      <div class="main">
-        <div class="name" [style.flex-direction]="flexDirection">
-          <p>{{ item.name }}</p>
-          <small>( {{ item.cost | currency: "₴" }} )</small>
+      <mat-grid-tile>
+        <div class="main">
+          <div class="name" [style.flex-direction]="flexDirection">
+            <p>{{ item.name }}</p>
+            <small>( {{ item.cost | currency: "₴" }} )</small>
+          </div>
+          <small class="size" i18n>Розмір: {{ item.size }}</small>
         </div>
-        <small class="size" i18n>Розмір: {{ item.size }}</small>
-      </div>
-      <div class="quantity">
+      </mat-grid-tile>
+      <mat-grid-tile>
         <mat-form-field class="quantity">
           <mat-label i18n>Кількість</mat-label>
           <input
@@ -20,31 +22,30 @@
             placeholder="1"
             [formControl]="quantityFormArray.at(i)"
             [value]="1"
-            (change)="retrieveData(itemsWithPrice)"
+            (change)="calculateTotalPrice(i)"
           />
           <mat-error>{{ getQuantityError(i, item.stock) }}</mat-error>
         </mat-form-field>
-      </div>
-      <span>{{ item.subTotal | currency: "₴" }}</span>
-      <button mat-raised-button (click)="removeFromCart(item)">
-        <mat-icon>delete</mat-icon>
-      </button>
+      </mat-grid-tile>
+      <mat-grid-tile>{{ item.subTotal | currency: "₴" }}</mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-raised-button (click)="removeFromCart(item)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </mat-grid-tile>
     </div>
-
-    <div>
+  </mat-grid-list>
+  <div>
+    <hr />
+    <div i18n>
+      Вартість
+      <span>{{ totalPrice | currency: "₴" }}</span>
       <hr />
-      <div i18n>
-        Вартість
-        <span>{{ totalPrice | currency: "₴" }}</span>
-        <hr />
-        <div class="buttons">
-          <button mat-raised-button (click)="clearCart()">
-            Очистити кошик
-          </button>
-          <ng-container *ngIf="orderAvailable">
-            <a mat-raised-button routerLink="checkout"> Придбати </a>
-          </ng-container>
-        </div>
+      <div class="buttons">
+        <button mat-raised-button (click)="clearCart()">Очистити кошик</button>
+        <ng-container *ngIf="orderAvailable">
+          <a mat-raised-button routerLink="checkout"> Придбати </a>
+        </ng-container>
       </div>
     </div>
   </div>

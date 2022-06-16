@@ -14,10 +14,22 @@ export class ProductsService {
   private path = environment.serverUrl + '/api/products/';
   constructor(private http: HttpClient, private matService: MaterialService) {}
 
-  get(params = { controlStock: true }): Observable<Product[]> {
+  get(
+    categories = '',
+    sizes = '',
+    offset = 0,
+    limit = 20
+  ): Observable<Product[]> {
+    let params = {
+      controlStock: true,
+      categories,
+      sizes,
+      limit,
+      offset,
+    };
     return this.http
       .get<Response>(this.path, {
-        params: params,
+        params,
       })
       .pipe(
         map((response: Response) => {
@@ -61,5 +73,19 @@ export class ProductsService {
         }),
         first()
       );
+  }
+
+  getSizes(): Observable<any> {
+    return this.http.get<Response>(this.path + 'get/sizes').pipe(
+      map((response: Response) => {
+        if (response.success) {
+          return response.data;
+        } else {
+          this.matService.openSnackBar(response.message);
+          return response;
+        }
+      }),
+      first()
+    );
   }
 }

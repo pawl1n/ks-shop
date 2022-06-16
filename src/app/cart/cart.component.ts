@@ -116,4 +116,12 @@ export class CartComponent implements OnInit {
       return '';
     }
   }
+
+  calculateTotalPrice(i: number) {
+    let totalPrice = 0;
+    for (let i = 0; i < this.itemsWithPrice.length; i++) {
+      totalPrice +=
+        this.itemsWithPrice[i].price * this.quantityFormArray.at(i).value;
+    }
+  }
 }

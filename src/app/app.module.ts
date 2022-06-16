@@ -33,6 +33,7 @@ import { DeliveryComponent } from './info/delivery/delivery.component';
 import { PaymentsComponent } from './info/payments/payments.component';
 import { AboutUsComponent } from './info/about-us/about-us.component';
 import { ReturnsComponent } from './info/returns/returns.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -70,6 +71,7 @@ import { ReturnsComponent } from './info/returns/returns.component';
     ReactiveFormsModule,
     MatBadgeModule,
     MatStepperModule,
+    MatProgressSpinnerModule,
   ],
   providers: [
     {

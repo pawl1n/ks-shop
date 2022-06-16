@@ -29,6 +29,7 @@ export class CatalogComponent implements OnInit {
   limit: number = 10;
   sizes: string[] = [];
   loadMoreButton: boolean = false;
+  loading: boolean = true;
 
   constructor(
     public breakpointObserver: BreakpointObserver,
@@ -58,9 +59,11 @@ export class CatalogComponent implements OnInit {
       this.categories = categories;
     });
 
+    this.loading = true;
     this.productsService
       .get('', '', 0, this.limit)
       .subscribe((products: Product[]) => {
+        this.loading = false;
         this.products = products;
         this.offset += products.length ? this.limit : 0;
 
@@ -82,10 +85,13 @@ export class CatalogComponent implements OnInit {
   loadMore(): void {
     let categories = this.filtersForm.value.category;
     let sizes = this.filtersForm.value.size;
+
+    this.loading = true;
     this.productsService
       .get(categories, sizes, this.offset, this.limit)
       .subscribe({
         next: (products: Product[]) => {
+          this.loading = false;
           this.products = this.products.concat(products);
           this.offset += products.length ? this.limit : 0;
 
@@ -95,13 +101,15 @@ export class CatalogComponent implements OnInit {
   }
 
   filtersChanged(): void {
-    console.log(this.limit);
     let categories = this.filtersForm.value.category;
     let sizes = this.filtersForm.value.size;
     this.offset = 0;
+
+    this.loading = true;
     this.productsService
       .get(categories, sizes, this.offset, this.limit)
       .subscribe((products: Product[]) => {
+        this.loading = false;
         this.products = products;
         this.offset += products.length ? this.limit : 0;
 

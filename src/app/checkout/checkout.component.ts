@@ -3,6 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Order } from 'interfaces/order';
 import { CartService } from 'services/cart.service';
+import { MaterialService } from 'services/material.service';
 import { OrdersService } from 'services/orders.service';
 
 @Component({
@@ -20,10 +21,16 @@ export class CheckoutComponent implements OnInit {
   constructor(
     private cartService: CartService,
     private ordersService: OrdersService,
-    private router: Router
+    private router: Router,
+    private matService: MaterialService
   ) {}
 
   ngOnInit(): void {
+    if (this.cartService.getItems().length === 0) {
+      this.matService.openSnackBar($localize`Кошик порожній`);
+      this.router.navigate(['cart']);
+    }
+
     this.credentialsForm = new FormGroup({
       name: new FormControl('', [Validators.required]),
       phone: new FormControl('', [Validators.required]),

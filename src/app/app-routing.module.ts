@@ -19,7 +19,7 @@ const routes: Routes = [
       {
         path: '',
         component: HomepageComponent,
-        title: `Кішка стрибає | Новий одяг`,
+        title: $localize`Кішка стрибає | Новий одяг`,
       },
       {
         path: 'catalog',

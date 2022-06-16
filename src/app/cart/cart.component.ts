@@ -117,11 +117,13 @@ export class CartComponent implements OnInit {
     }
   }
 
-  calculateTotalPrice(i: number) {
+  calculateTotalPrice() {
     let totalPrice = 0;
     for (let i = 0; i < this.itemsWithPrice.length; i++) {
-      totalPrice +=
-        this.itemsWithPrice[i].price * this.quantityFormArray.at(i).value;
+      this.itemsWithPrice[i].subTotal =
+        this.itemsWithPrice[i].cost * this.quantityFormArray.at(i).value;
+      totalPrice += this.itemsWithPrice[i].subTotal;
     }
+    this.totalPrice = totalPrice;
   }
 }

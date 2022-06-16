@@ -16,6 +16,13 @@
           <context context-type="linenumber">21</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="7321191298145234374" datatype="html">
+        <source>Кішка стрибає | Новий одяг</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/app-routing.module.ts</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="1809254255214550583" datatype="html">
         <source>Кішка стрибає | Каталог</source>
         <context-group purpose="location">
@@ -113,6 +120,10 @@
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/cart/cart.component.html</context>
           <context context-type="linenumber">57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/checkout/checkout.component.ts</context>
+          <context context-type="linenumber">30</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1490978183209637130" datatype="html">
@@ -289,42 +300,42 @@
         <source>Необхідно ввести email</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/checkout/checkout.component.ts</context>
-          <context context-type="linenumber">61</context>
+          <context context-type="linenumber">68</context>
         </context-group>
       </trans-unit>
       <trans-unit id="20395172232251459" datatype="html">
         <source>Неправильно введено email</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/checkout/checkout.component.ts</context>
-          <context context-type="linenumber">63</context>
+          <context context-type="linenumber">70</context>
         </context-group>
       </trans-unit>
       <trans-unit id="798660179268510947" datatype="html">
         <source>Необхідно ввести імʼя</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/checkout/checkout.component.ts</context>
-          <context context-type="linenumber">69</context>
+          <context context-type="linenumber">76</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5334018619538549775" datatype="html">
         <source>Необхідно ввести номер телефону</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/checkout/checkout.component.ts</context>
-          <context context-type="linenumber">75</context>
+          <context context-type="linenumber">82</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6251080683946747918" datatype="html">
         <source>Необхідно ввести номер відділу</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/checkout/checkout.component.ts</context>
-          <context context-type="linenumber">81</context>
+          <context context-type="linenumber">88</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5744583905981466522" datatype="html">
         <source>Необхідно ввести місто</source>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/checkout/checkout.component.ts</context>
-          <context context-type="linenumber">87</context>
+          <context context-type="linenumber">94</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8627397845717886119" datatype="html">

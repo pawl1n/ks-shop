@@ -18,7 +18,7 @@ export class ProductsService {
     categories = '',
     sizes = '',
     offset = 0,
-    limit = 20
+    limit = 10
   ): Observable<Product[]> {
     let params = {
       controlStock: true,

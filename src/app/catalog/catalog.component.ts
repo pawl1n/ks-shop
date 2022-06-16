@@ -26,7 +26,7 @@ export class CatalogComponent implements OnInit {
   filtersForm!: FormGroup;
   categories: Category[] = [];
   offset: number = 0;
-  limit: number = 20;
+  limit: number = 10;
   sizes: string[] = [];
   loadMoreButton: boolean = false;
 

@@ -23,7 +23,7 @@
               placeholder="1"
               [formControl]="quantityFormArray.at(i)"
               [value]="1"
-              (change)="calculateTotalPrice()"
+              (change)="calculateTotalPrice(i)"
             />
             <mat-error>{{ getQuantityError(i, item.stock) }}</mat-error>
           </mat-form-field>

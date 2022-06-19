@@ -117,7 +117,13 @@ export class CartComponent implements OnInit {
     }
   }
 
-  calculateTotalPrice() {
+  calculateTotalPrice(index: number) {
+    this.itemsWithPrice[index].quantity =
+      this.quantityFormArray.at(index).value;
+
+    this.cartService.removeItem(this.itemsWithPrice[index]);
+    this.cartService.addToCart(this.itemsWithPrice[index]);
+
     let totalPrice = 0;
     for (let i = 0; i < this.itemsWithPrice.length; i++) {
       this.itemsWithPrice[i].subTotal =

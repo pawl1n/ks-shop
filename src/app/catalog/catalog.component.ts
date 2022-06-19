@@ -30,6 +30,7 @@ export class CatalogComponent implements OnInit {
   sizes: string[] = [];
   loadMoreButton: boolean = false;
   loading: boolean = true;
+  types: string[] = [];
 
   constructor(
     public breakpointObserver: BreakpointObserver,
@@ -41,6 +42,7 @@ export class CatalogComponent implements OnInit {
     this.filtersForm = new FormGroup({
       category: new FormControl(''),
       size: new FormControl(''),
+      type: new FormControl(''),
     });
 
     this.breakpointObserver
@@ -61,7 +63,7 @@ export class CatalogComponent implements OnInit {
 
     this.loading = true;
     this.productsService
-      .get('', '', 0, this.limit)
+      .get('', '', '', 0, this.limit)
       .subscribe((products: Product[]) => {
         this.loading = false;
         this.products = products;
@@ -73,6 +75,10 @@ export class CatalogComponent implements OnInit {
     this.productsService.getSizes().subscribe((sizes: string[]) => {
       this.sizes = sizes;
     });
+
+    this.productsService.getTypes().subscribe((types: string[]) => {
+      this.types = types;
+    });
   }
 
   getSrc(image: string): string {
@@ -83,12 +89,13 @@ export class CatalogComponent implements OnInit {
   }
 
   loadMore(): void {
-    let categories = this.filtersForm.value.category;
-    let sizes = this.filtersForm.value.size;
+    let category = this.filtersForm.value.category;
+    let size = this.filtersForm.value.size;
+    let type = this.filtersForm.value.type;
 
     this.loading = true;
     this.productsService
-      .get(categories, sizes, this.offset, this.limit)
+      .get(category, size, type, this.offset, this.limit)
       .subscribe({
         next: (products: Product[]) => {
           this.loading = false;
@@ -101,19 +108,33 @@ export class CatalogComponent implements OnInit {
   }
 
   filtersChanged(): void {
-    let categories = this.filtersForm.value.category;
-    let sizes = this.filtersForm.value.size;
+    let category = this.filtersForm.value.category;
+    let size = this.filtersForm.value.size;
+    let type = this.filtersForm.value.type;
     this.offset = 0;
 
     this.loading = true;
-    this.productsService
-      .get(categories, sizes, this.offset, this.limit)
-      .subscribe((products: Product[]) => {
-        this.loading = false;
-        this.products = products;
-        this.offset += products.length ? this.limit : 0;
 
-        this.loadMoreButton = products.length >= this.limit;
+    this.productsService
+      .getSizes(type, category)
+      .subscribe((sizes: string[]) => {
+        this.sizes = sizes;
+
+        if (!sizes.includes(size)) {
+          this.filtersForm.patchValue({
+            size: '',
+          });
+          size = '';
+        }
+        this.productsService
+          .get(category, size, type, this.offset, this.limit)
+          .subscribe((products: Product[]) => {
+            this.loading = false;
+            this.products = products;
+            this.offset += products.length ? this.limit : 0;
+
+            this.loadMoreButton = products.length >= this.limit;
+          });
       });
   }
 }

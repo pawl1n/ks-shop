@@ -17,6 +17,7 @@ export class ProductsService {
   get(
     categories = '',
     sizes = '',
+    types = '',
     offset = 0,
     limit = 10
   ): Observable<Product[]> {
@@ -24,6 +25,7 @@ export class ProductsService {
       controlStock: true,
       categories,
       sizes,
+      types,
       limit,
       offset,
     };
@@ -75,8 +77,29 @@ export class ProductsService {
       );
   }
 
-  getSizes(): Observable<any> {
-    return this.http.get<Response>(this.path + 'get/sizes').pipe(
+  getSizes(types: string = '', categories: string = ''): Observable<any> {
+    return this.http
+      .get<Response>(this.path + 'get/sizes', {
+        params: {
+          types,
+          categories,
+        },
+      })
+      .pipe(
+        map((response: Response) => {
+          if (response.success) {
+            return response.data;
+          } else {
+            this.matService.openSnackBar(response.message);
+            return response;
+          }
+        }),
+        first()
+      );
+  }
+
+  getTypes(): Observable<any> {
+    return this.http.get<Response>(this.path + 'get/types').pipe(
       map((response: Response) => {
         if (response.success) {
           return response.data;

@@ -6,6 +6,16 @@
   <h1 i18n>Фільтри</h1>
   <form class="filters-container" [formGroup]="filtersForm">
     <mat-form-field>
+      <mat-label i18n>Тип</mat-label>
+      <mat-select formControlName="type" (selectionChange)="filtersChanged()">
+        <mat-option value="" i18n>Всі</mat-option>
+        <mat-option *ngFor="let type of types" [value]="type" i18n
+          >{ type, select, Men {Чоловікам} Women {Дівчатам} Kids {Дітям} other {
+          Інше} }
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field>
       <mat-label i18n>Категорія</mat-label>
       <mat-select
         formControlName="category"

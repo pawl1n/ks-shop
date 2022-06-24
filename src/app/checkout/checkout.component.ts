@@ -17,6 +17,7 @@ export class CheckoutComponent implements OnInit {
   credentialsForm!: FormGroup;
   addressForm!: FormGroup;
   totalPrice: number = 0;
+  disabled: boolean = false;
 
   constructor(
     private cartService: CartService,
@@ -45,6 +46,7 @@ export class CheckoutComponent implements OnInit {
   }
 
   order() {
+    this.disabled = true;
     const order: Order = {
       list: this.cartService.getItems().map((item) => {
         return {
@@ -59,6 +61,7 @@ export class CheckoutComponent implements OnInit {
       next: (ans: any) => {
         this.cartService.clearCart();
         this.router.navigate(['catalog']);
+        this.disabled = false;
       },
     });
   }

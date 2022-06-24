@@ -139,7 +139,7 @@
         </context-group>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/checkout/checkout.component.ts</context>
-          <context context-type="linenumber">30</context>
+          <context context-type="linenumber">31</context>
         </context-group>
       </trans-unit>
       <trans-unit id="1490978183209637130" datatype="html">
@@ -356,12 +356,12 @@
           <context context-type="linenumber">75</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="3106183744742844158" datatype="html">
-        <source>Замовити</source>
-        <target>Order</target>
+      <trans-unit id="120708243635068248" datatype="html">
+        <source> Замовити </source>
+        <target> Order </target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/checkout/checkout.component.html</context>
-          <context context-type="linenumber">78</context>
+           <context context-type="linenumber">78,80</context>
         </context-group>
       </trans-unit>
       <trans-unit id="3766192718221718334" datatype="html">
@@ -369,7 +369,7 @@
         <target>Field email is required</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/checkout/checkout.component.ts</context>
-          <context context-type="linenumber">68</context>
+          <context context-type="linenumber">71</context>
         </context-group>
       </trans-unit>
       <trans-unit id="20395172232251459" datatype="html">
@@ -377,7 +377,7 @@
         <target>The email was entered incorrectly</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/checkout/checkout.component.ts</context>
-          <context context-type="linenumber">70</context>
+          <context context-type="linenumber">73</context>
         </context-group>
       </trans-unit>
       <trans-unit id="798660179268510947" datatype="html">
@@ -385,7 +385,7 @@
         <target>Field name is required</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/checkout/checkout.component.ts</context>
-          <context context-type="linenumber">76</context>
+          <context context-type="linenumber">79</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5334018619538549775" datatype="html">
@@ -393,7 +393,7 @@
         <target>Phone number is required</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/checkout/checkout.component.ts</context>
-          <context context-type="linenumber">82</context>
+          <context context-type="linenumber">85</context>
         </context-group>
       </trans-unit>
       <trans-unit id="6251080683946747918" datatype="html">
@@ -401,7 +401,7 @@
         <target>Department number is required</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/checkout/checkout.component.ts</context>
-          <context context-type="linenumber">88</context>
+          <context context-type="linenumber">91</context>
         </context-group>
       </trans-unit>
       <trans-unit id="5744583905981466522" datatype="html">
@@ -409,7 +409,7 @@
         <target>City is required</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/app/checkout/checkout.component.ts</context>
-          <context context-type="linenumber">94</context>
+          <context context-type="linenumber">97</context>
         </context-group>
       </trans-unit>
       <trans-unit id="8627397845717886119" datatype="html">

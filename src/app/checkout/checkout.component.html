@@ -75,7 +75,9 @@
       <p i18n>На даний момент доступна лише післяплата</p>
       <div>
         <button i18n mat-button matStepperPrevious>Назад</button>
-        <button i18n mat-button (click)="order()">Замовити</button>
+        <button i18n mat-button (click)="order()" [disabled]="disabled">
+          Замовити
+        </button>
       </div>
     </form>
   </mat-step>
